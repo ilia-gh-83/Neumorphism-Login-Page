@@ -1,0 +1,109 @@
+:root {
+  --color: #e0e0e0;
+  --dark: rgb(119, 119, 119);
+  --text: rgb(68, 67, 67);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: var(--color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.github {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: flex-start;
+  top: 1.5em;
+  left: 1em;
+  color: var(--text);
+  font-size: 15px;
+  z-index: -1;
+}
+
+.gh {
+  display: flex;
+  width: 10em;
+  height: 2.5em;
+  gap: 0.5em;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+  background-color: var(--color);
+  height: 32em;
+  width: 30em;
+  border-radius: 3em;
+  box-shadow: 20px 20px 40px var(--dark), -20px -20px 40px white;
+}
+
+.logo {
+  display: flex;
+  color: var(--text);
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color);
+  border: none;
+  outline: none;
+  width: 7em;
+  height: 7em;
+  border-radius: 1em;
+  box-shadow: 5px 5px 10px var(--dark), -5px -5px 10px white;
+}
+
+.input {
+  background-color: var(--color);
+  color: var(--text);
+  width: 20em;
+  height: 3.5em;
+  border: none;
+  outline: none;
+  border-radius: 1em;
+  padding: 1.8em;
+  box-shadow: inset -2px -2px 10px rgb(158, 157, 157);
+  font-family: inherit;
+}
+
+.button {
+  background-color: var(--color);
+  color: var(--text);
+  font-weight: bold;
+  width: 10em;
+  height: 3.5em;
+  border-radius: 1em;
+  border: none;
+  box-shadow: 5px 5px 10px var(--dark), -5px -5px 10px white;
+  transition: 0.5s ease-in-out;
+  font-family: inherit;
+}
+
+.button:hover {
+  color: rgba(0, 255, 234, 0.7);
+}
+
+.button:focus {
+  color: rgba(0, 255, 234, 0.7);
+  box-shadow: inset -2px -2px 10px var(--dark), inset 2px 2px 5px var(--dark);
+}
